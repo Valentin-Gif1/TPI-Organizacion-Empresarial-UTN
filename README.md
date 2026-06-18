@@ -32,4 +32,4 @@ python Codigo_bot.py
 - `base_datos.csv` - Base de datos de problemas y soluciones
 - `Bpmn asis.drawio.xml` - Diagrama proceso manual (draw.io)
 - `BBpmn TO BE.drawio.xml` - Diagrama proceso automatizado (draw.io)
-- `TPI_OE_Carbone_Valentin_v2.docx` - Informe final
+- `TPI OE Carbone Valentin.pdf` - Informe final
