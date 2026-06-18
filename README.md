@@ -30,6 +30,6 @@ python Codigo_bot.py
 
 - `Codigo_bot.py` - Chatbot principal
 - `base_datos.csv` - Base de datos de problemas y soluciones
-- `BPMN_AsIs_v5.xml` - Diagrama proceso manual (draw.io)
-- `BPMN_ToBe_v4.xml` - Diagrama proceso automatizado (draw.io)
+- `Bpmn asis.drawio.xml` - Diagrama proceso manual (draw.io)
+- `BBpmn TO BE.drawio.xml` - Diagrama proceso automatizado (draw.io)
 - `TPI_OE_Carbone_Valentin_v2.docx` - Informe final
