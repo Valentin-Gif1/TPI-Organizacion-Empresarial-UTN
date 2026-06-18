@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="Dt2QxLhOdv8OINKYNIqQ">
+    <mxGraphModel dx="2241" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=0;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;fillColor=#dae8fc;strokeColor=none;" value="TechSoluciones S.A. - Soporte Tecnico Nivel 1 (AS-IS)" vertex="1">
+          <mxGeometry height="400" width="1050" x="-30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="laneC" parent="pool" style="swimlane;startSize=30;horizontal=0;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" value="Cliente" vertex="1">
+          <mxGeometry height="170" width="1050" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" parent="laneC" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="Inicio" vertex="1">
+          <mxGeometry height="70" width="70" x="50" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" parent="laneC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Describe el problema al empleado" vertex="1">
+          <mxGeometry height="60" width="150" x="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="t2" parent="laneC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Espera respuesta del empleado" vertex="1">
+          <mxGeometry height="60" width="150" x="580" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gw2" parent="laneC" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Problema resuelto?" vertex="1">
+          <mxGeometry height="80" width="110" x="790" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" parent="laneC" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;fontSize=11;" value="Fin&#xa;Caso cerrado" vertex="1">
+          <mxGeometry height="70" width="70" x="960" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" edge="1" parent="laneC" source="e1" style="edgeStyle=orthogonalEdgeStyle;" target="t1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f7" edge="1" parent="laneC" source="t2" style="edgeStyle=orthogonalEdgeStyle;" target="gw2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f8" edge="1" parent="laneC" source="gw2" style="edgeStyle=orthogonalEdgeStyle;" target="e2" value="Si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="laneE" parent="pool" style="swimlane;startSize=30;horizontal=0;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Empleado de Soporte" vertex="1">
+          <mxGeometry height="200" width="1050" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="t3" parent="laneE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Recibe y registra el problema manualmente" vertex="1">
+          <mxGeometry height="60" width="150" x="200" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="gw1" parent="laneE" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Puede resolver?" vertex="1">
+          <mxGeometry height="80" width="110" x="420" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="t4" parent="laneE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Brinda solucion al cliente" vertex="1">
+          <mxGeometry height="60" width="140" x="590" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" parent="laneE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Escala a tecnico especialista" vertex="1">
+          <mxGeometry height="60" width="140" x="600" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" parent="laneE" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;fontSize=11;" value="Fin&#xa;Escalado" vertex="1">
+          <mxGeometry height="70" width="70" x="820" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" edge="1" parent="laneE" source="t3" style="edgeStyle=orthogonalEdgeStyle;" target="gw1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" edge="1" parent="laneE" source="gw1" style="edgeStyle=orthogonalEdgeStyle;" target="t4" value="Si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5" edge="1" parent="laneE" source="gw1" style="edgeStyle=orthogonalEdgeStyle;" target="t5" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f10" edge="1" parent="laneE" source="t5" style="edgeStyle=orthogonalEdgeStyle;" target="e3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9" edge="1" parent="laneE" style="exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" value="No">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="857" y="-35" as="sourcePoint" />
+            <mxPoint x="735.9960869565215" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f2" edge="1" parent="pool" source="t1" style="edgeStyle=orthogonalEdgeStyle;" target="t3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f6" edge="1" parent="pool" source="t4" style="edgeStyle=orthogonalEdgeStyle;" target="t2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
